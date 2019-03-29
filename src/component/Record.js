@@ -55,8 +55,8 @@ class Record extends React.PureComponent {
         const { name, currency } = this.state;
         return (
             <React.Fragment>
-                <Input placeholder="点外卖人员姓名" value={name} style={{ width: '10%', marginRight: 8 }} onChange={this.handleNameChange}/>
-                <Input placeholder="价格" value={currency} style={{ width: '10%', marginRight: 8 }} onChange={this.handleCurrencyChange}/>
+                <Input placeholder="点外卖人员姓名" value={name} style={{ width: '40%', marginRight: 8 }} onChange={this.handleNameChange}/>
+                <Input placeholder="价格" value={currency} style={{ width: '40%', marginRight: 8 }} onChange={this.handleCurrencyChange}/>
             </React.Fragment>
         )
     }

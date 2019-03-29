@@ -14,5 +14,5 @@ app.use('/',express.static(path.join(__dirname,'build')));
 
 
 app.listen(3000, function() {
-    console.log('http://192.168.109.178:3000');
+    console.log('http://localhost:3000');
 });

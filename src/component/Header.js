@@ -153,7 +153,7 @@ class LayoutComponent extends React.Component {
                     <Col span={4}/>
                     <Col span={20}>
                         <List
-                            style={{width: "50%"}}
+                            style={{width: "80%"}}
                             header={<div>计算结果</div>}
                             bordered
                             dataSource={names}

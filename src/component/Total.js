@@ -63,9 +63,9 @@ class Total extends React.PureComponent {
         const { tax, off, total } = this.state;
         return (
             <div>
-                <span>配送费和包装费：</span><Input value={tax} style={{ width: '10%', marginRight: 8 }} onChange={this.handleTaxChange}/>
-                <span>满减和红包：</span><Input value={off} style={{ width: '10%', marginRight: 8 }} onChange={this.handleOffChange}/>
-                <span>实付总价：</span><Input value={total} style={{ width: '10%', marginRight: 8 }} onChange={this.handleTotalChange}/>
+                <span>配送费和包装费：</span><Input value={tax} style={{ width: '20%', marginRight: 8 }} onChange={this.handleTaxChange}/>
+                <span>满减和红包：</span><Input value={off} style={{ width: '20%', marginRight: 8 }} onChange={this.handleOffChange}/>
+                <span>实付总价：</span><Input value={total} style={{ width: '20%', marginRight: 8 }} onChange={this.handleTotalChange}/>
             </div>
         )
     }
