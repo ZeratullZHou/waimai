@@ -11,9 +11,12 @@ import Record from './Record';
 import Total from './Total';
 
 function calculateMoney(currency, all, length) {
-    const {total, off , tax} = all;
+    const current = parseFloat(currency);
+    const tax = parseFloat(all.tax);
+    const off = parseFloat(all.off);
+    const total = parseFloat(all.total);
     const newTotal = total - tax + off;
-    const value = length === 1 ? total : currency - currency / newTotal * off + tax / length;
+    const value = length === 1 ? total : current - current / newTotal * off + tax / length;
     return value.toFixed(2);
 }
 

@@ -29,7 +29,7 @@ class Total extends React.PureComponent {
     }
 
     handleTaxChange = (e) => {
-        const tax = parseFloat(e.target.value);
+        const tax = e.target.value;
         if (!('value' in this.props)) {
             this.setState({ tax });
         }
@@ -37,7 +37,7 @@ class Total extends React.PureComponent {
     };
 
     handleOffChange = (e) => {
-        const off = parseFloat(e.target.value);
+        const off = e.target.value;
         if (!('value' in this.props)) {
             this.setState({ off });
         }
@@ -45,7 +45,7 @@ class Total extends React.PureComponent {
     };
 
     handleTotalChange = (e) => {
-        const total = parseFloat(e.target.value);
+        const total = e.target.value;
         if (!('value' in this.props)) {
             this.setState({ total });
         }

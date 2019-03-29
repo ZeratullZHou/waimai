@@ -36,7 +36,7 @@ class Record extends React.PureComponent {
     };
 
     handleCurrencyChange = (e) => {
-        let currency = parseFloat(e.target.value);
+        let currency = e.target.value;
 
         if (!('value' in this.props)) {
             this.setState({ currency });
