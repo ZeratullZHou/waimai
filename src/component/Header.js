@@ -20,6 +20,17 @@ function calculateMoney(currency, all, length) {
     return value.toFixed(2);
 }
 
+function clearEmptyElement(arr) {
+    const array = arr.slice();
+    for(let i = 0 ;i<array.length;i++) {
+        if(array[i] === "" || typeof(array[i]) === "undefined") {
+            array.splice(i,1);
+            i= i-1;
+        }
+    }
+    return array;
+}
+
 const formItemLayout = {
     labelCol: {
         xs: {span: 24},
@@ -79,7 +90,7 @@ class LayoutComponent extends React.Component {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
             if (!err) {
-                console.log('Received values of form: ', values);
+                values.names = clearEmptyElement(values.names);
                 this.setState({
                     ...values,
                 })
